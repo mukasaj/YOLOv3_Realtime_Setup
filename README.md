@@ -1,9 +1,11 @@
 # YOLOv3_Realtime_Setup
-Quickly get YOLOv3 and the required dependencies installed/running.  NOTE: (TESTED WITH i7-770HQ &amp; GTX 1050Ti RUNNING UBUNTU 18.04)
+Quickly get YOLOv3 and the required dependencies installed/running.  
 
 
-Before we get started I just want to say a quick thank you to pjreddie, AlexeyAB and learnopencv, some of thier material are used in this repo. 
 
+Before we get started I just want to say a quick thank you to pjreddie, AlexeyAB and learnopencv, some of thier material are used in this repo.  
+
+You'll need CUDA 10.2 installed on your system. Other versions might work but I used 10.2
 Clone this repo to your home folder and then run the install.sh.
 Install.sh does the following:
 1. Update Ubuntu
