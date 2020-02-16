@@ -18,7 +18,7 @@ Install.sh does the following:
 	1. Compile darknet_YOLOv3
 	
 	
- I just want to say a quick thank you to pjreddie, AlexeyAB and learnopencv, some of thier material are used in this repo.  
+ I just want to say a quick thank you to pjreddie, AlexeyAB and learnopencv, some of thier materials are used in this repo.  
 
 
 
