@@ -55,7 +55,7 @@ sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 
 # DARKET NET
-git clone https://github.com/AlexeyAB/darknet.git
+git clone https://github.com/AlexeyAB/darknet.git ~/darknet
 cd ~/darknet
 rm -rf Makefile
 cp -r ~/yolov3_setup/Makefile Makefile
