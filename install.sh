@@ -36,8 +36,12 @@ sudo -H pip3 install -U pip numpy
 sudo apt -y install python3-testresources
 
 # COPY OPENCV TO HOME
-cp -r ~/yolov3_setup/opencv3.4.6 ~/opencv
-cp -r ~yolov3_setup/opencv_contrib ~/opencv_contrib
+git clone https://github.com/opencv/opencv.git ~/opencv
+cd ~/opencv
+git checkout 3.4.6
+git clone https://github.com/opencv/opencv_contrib.git ~/opencv_contrib
+cd ~/opencv_contrib
+git checkout 3.4.6
 
 # MAKE OPENCV
 
@@ -51,6 +55,11 @@ sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 
 # DARKET NET
-cp -r ~/yolov3_setup/darknet ~/darknet
+git clone https://github.com/AlexeyAB/darknet.git
 cd ~/darknet
+rm -rf Makefile
+cp -r ~/yolov3_setup/Makefile Makefile
+wget https://pjreddie.com/media/files/yolov3.weights
+wget https://pjreddie.com/media/files/yolov3-tiny.weights
 sudo make
+echo "Installation should be done now!"
