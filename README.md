@@ -6,7 +6,7 @@ Quickly get YOLOv3 and the required dependencies installed/running.
 Before we get started You'll need CUDA 10.2 installed on your system. Other versions might work but I used 10.2.
 
 
-Clone this repo to your home folder and then run the install.sh.
+Clone this repo to your home folder under the name yolov3_setup and then run the install.sh.
 Install.sh does the following:
 1. Update Ubuntu
 1. Install opencv dependencies
